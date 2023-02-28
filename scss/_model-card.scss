@@ -1,0 +1,82 @@
+.model-card {
+    padding: 20px 14px;
+    background-color: #fdfdfb;
+
+    @media (max-width: 370px) {
+        padding: 20px 0;
+    }
+}
+
+.model-card__name,
+.model-card__price {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.model-card__name {
+    margin-bottom: 10px;
+
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.714em;
+    letter-spacing: 0.03em;
+}
+
+.model-card__price {
+    font-family: "Prata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.333em;
+
+    color: rgba(27, 26, 23, 0.82);
+}
+
+.model-card__details {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.model-card__details-link {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3125em;
+
+    color: #1b1a17;
+    text-decoration: none;
+    position: relative;
+}
+
+.model-card__details-link::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    top: 11px;
+    right: 100%;
+    margin-right: 18px;
+    border: 1px solid #8b8371;
+}
+
+.model-card__details-link:hover:before {
+    display: none;
+}
+
+.model-card__img-box {
+    background-image: url("../img/model-cards/bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 8px;
+
+    @media (max-width: 340px) {
+        background-size: contain;
+    }
+}
+
+.model-card__img {
+    @media (max-width: 340px) {
+        width: 100%;
+    }
+}

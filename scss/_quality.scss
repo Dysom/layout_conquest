@@ -1,0 +1,131 @@
+@use "./section";
+
+.quality {
+    background-image: linear-gradient(to right, #f7f5ef 0, #f7f5ef 35%, transparent 35%),
+        url("../img/quality/bg-quality.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, right;
+    background-size: auto, auto 100%;
+
+    @media (max-width: 910px) {
+        background: none;
+    }
+}
+
+.quality__wrapper {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 860px) {
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+.quality__description-box {
+    max-width: 480px;
+    padding: 50px;
+
+    @media (max-width: 860px) {
+        text-align: center;
+    }
+
+    @media (max-width: 370px) {
+        padding: 50px 0;
+    }
+}
+
+.quality__title {
+    margin-bottom: 32px;
+
+    @extend %title;
+}
+
+.quality__text {
+    margin-bottom: 40px;
+
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+
+    color: #444240;
+}
+
+.quality__button {
+    min-width: 205px;
+    min-height: 64px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d4b098;
+
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.166em;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+
+    @media (max-width: 860px) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 370px) {
+        min-width: unset;
+    }
+}
+
+.quality__img-box {
+    position: relative;
+
+    @media (max-width: 860px) {
+        display: none;
+    }
+}
+
+.quality__img {
+    @media (max-width: 910px) {
+        width: 100%;
+    }
+}
+
+.quality__slider {
+    position: absolute;
+    top: 100%;
+    margin-top: 18px;
+    right: 80px;
+
+    font-family: "Prata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.333em;
+
+    color: rgba(27, 26, 23, 0.82);
+}
+
+.quality__slider-link {
+    display: inline-block;
+    text-decoration: none;
+    width: 7px;
+    height: 7px;
+
+    border: 1px solid #1b1a17;
+    border-width: 0 0 0.5px 0.5px;
+
+    transform: rotate(45deg) translateY(-3px);
+}
+
+.quality__slider-link_right {
+    border-width: 0.5px 0.5px 0 0;
+    transform: rotate(45deg) translateX(-3px);
+}
+
+.quality__slider-text {
+    margin: 0 18px;
+}

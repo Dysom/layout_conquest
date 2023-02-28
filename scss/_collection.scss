@@ -1,0 +1,188 @@
+$collection-mmv-point: 780px;
+
+.collection {
+    background-image: url("../img/collection/collection-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $collection-mmv-point) {
+        background: none;
+    }
+}
+
+.collection__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $collection-mmv-point) {
+        padding-top: 30px;
+        flex-direction: column-reverse;
+    }
+}
+
+.collection__box {
+    // border: 1px solid green;
+}
+
+$collection__box_left-mmv-point: 415px;
+
+.collection__box_left {
+    flex-basis: 517px;
+    padding: 20px 87px;
+
+    @media (max-width: $collection-mmv-point) {
+        flex-basis: unset;
+    }
+
+    @media (max-width: $collection__box_left-mmv-point) {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.collection__box_right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.collection__title {
+    margin-bottom: 12px;
+    position: relative;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.333em;
+    color: #1b1a17;
+}
+
+.collection__title::before {
+    content: "";
+    width: 50px;
+    height: 0px;
+    left: -65px;
+    top: 34px;
+    border: 1px solid #8b8371;
+    position: absolute;
+
+    @media (max-width: $collection__box_left-mmv-point) {
+        display: none;
+    }
+}
+
+.collection__subtitle {
+    margin-bottom: 32px;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.333em;
+    color: #1b1a17;
+}
+
+.collection__text {
+    margin-bottom: 55px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: rgba(27, 26, 23, 0.82);
+}
+
+.collection__button {
+    min-width: 205px;
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #444240;
+
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.166em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @media (max-width: $collection__box_left-mmv-point) {
+        margin: 0 auto;
+    }
+}
+
+.collection__picture-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.collection__picture {
+    @media (max-width: 970px) {
+        width: 40vw;
+    }
+
+    @media (max-width: $collection-mmv-point) {
+        // width: 35vw;
+    }
+}
+
+.collection__inscription-price,
+.collection__inscription-diameter {
+    position: absolute;
+    font-family: "Prata";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375em;
+    color: #1b1a17;
+    white-space: nowrap;
+
+    @media (max-width: 790px) {
+        display: none;
+    }
+}
+
+.collection__inscription-price {
+    left: -30%;
+    top: 17.3%;
+}
+
+$diameter-mmv-point: 1150px;
+
+.collection__inscription-diameter {
+    right: -35.5%;
+    bottom: 14.5%;
+
+    @media (max-width: 1200px) {
+        right: -30%;
+    }
+
+    @media (max-width: $diameter-mmv-point) {
+        right: unset;
+        left: -30%;
+    }
+}
+
+.collection__inscription-price::before,
+.collection__inscription-diameter::before {
+    content: "";
+    width: 3.125em;
+    top: 0.5625em;
+    border: 1px solid #8b8371;
+    position: absolute;
+}
+
+.collection__inscription-price::before {
+    left: 100%;
+    margin-left: 0.94em;
+}
+
+.collection__inscription-diameter::before {
+    right: 100%;
+    margin-right: 0.94em;
+
+    @media (max-width: $diameter-mmv-point) {
+        right: unset;
+        margin-right: unset;
+        left: 100%;
+        margin-left: 0.94em;
+    }
+}

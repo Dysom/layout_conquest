@@ -1,0 +1,31 @@
+.tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tools__item_rel {
+    position: relative;
+}
+
+.tools__likes {
+    min-width: 13px;
+    min-height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e6c8b4;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.125em;
+    text-align: center;
+    color: #1b1a17;
+}

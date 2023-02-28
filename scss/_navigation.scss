@@ -1,0 +1,27 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 450px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.navigation__link {
+    margin: 0 20px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.143em;
+    color: #555248;
+    text-decoration: none;
+
+    @media (max-width: 450px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

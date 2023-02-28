@@ -1,0 +1,41 @@
+$wrap-width: 690px;
+
+.header__wrapper {
+    min-height: 74px;
+    padding: 35px 0 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: $wrap-width) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.header__logo {
+    margin-top: -2px;
+    margin-right: 20px;
+
+    @media (max-width: $wrap-width) {
+        margin-right: 0;
+    }
+}
+
+.header__navigation {
+    flex-basis: 462px;
+
+    @media (max-width: $wrap-width) {
+        width: 100%;
+        margin: 20px 0;
+        flex-basis: unset;
+    }
+}
+
+.header__tools {
+    min-width: 99px;
+    margin-left: 20px;
+
+    @media (max-width: $wrap-width) {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,12 @@
+.socials-nav {
+    display: flex;
+    align-items: center;
+}
+
+.socials-nav__link {
+    text-decoration: none;
+}
+
+.socials-nav__link:not(:last-of-type) {
+    margin-right: 18px;
+}
